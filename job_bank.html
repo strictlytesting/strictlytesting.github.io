@@ -25,7 +25,7 @@
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo"><img class="responsive-img" src="img/logo.jpg" height="60px" width="60px"></a>
+      <a id="logo-container" href="index.html" class="brand-logo"><img class="responsive-img hide-on-small-only" src="img/logo.jpg" height="60px" width="60px"></a>
       <div class="right">
         <form action="search.html">
           <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
@@ -36,7 +36,7 @@
         <li><a href="#">Programme</a></li>
         <li><a href="job_bank.html">Job Bank</a></li>
         <li><a href="register.html">Documents</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>e
         <li><a href="#">More</a></li>
       </ul>
@@ -51,13 +51,41 @@
         <li><a href="programme.html">Programme</a></li>
         <li class="active"><a href="job_bank.html">Job Bank</a></li>
         <li><a href="register.html">Documents</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="#">More</a></li>
       </ul>
     </div>
   </nav>
 
+<script>
+
+  foreach my $WorksheetObject (@{$BookObject->{Worksheet}}) {
+   print "<table>\n";
+   for(my $RowIndex = '0'; # starting at minimu+m row value
+       defined $WorksheetObject->{MaxRow} &&
+         $RowIndex <= '7'; # ending at maximum +row value
+       $RowIndex++) {
+      print "<tr>"; 
+      for (my $ColumnIndex = '0';
+           defined $WorksheetObject->{MaxCol} &&
+             $ColumnIndex <= '2';
+           $ColumnIndex++) {
+          my $CellObject = $WorksheetObject->{Cells}[$RowIndex][$Colum
++nIndex]; # get cell
+          #print "($RowIndex, $ColumnIndex)",
+           print "<td>" . $CellObject->Value . "</td>" if ($CellObject
++);
+      }
+      print "</tr>\n"; 
+   }
+   print "</table>\n";
+}
+
+</script>
+
+
+<!--
 <div class="container">
   <table class="striped">
         <thead>
@@ -92,6 +120,8 @@
       </table>
   </div>
   <br>
+
+  -->
 
     <!--Begin footer -->
   <footer class="page-footer #8bc34a light-green">

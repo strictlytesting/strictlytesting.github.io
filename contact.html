@@ -3,66 +3,41 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>International Work And Travel Services!</title>
+  <title>International Work and Travel Services</title>
 
-  <!-- CSS  -->
+  <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="/Users/garfieldgray/Documents/Web Development/IWTS/css/materialize.css" type="text/css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link href="css/animate.css" type="text/css" rel="stylesheet">
+  <link href="css/hover.css" type="text/css" rel="stylesheet">
+  <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="tipuesearch/tipuesearch_content.js"></script>
+  <script src="tipuesearch/tipuesearch_set.js"></script>
+  <script src="tipuesearch/tipuesearch.min.js"></script>
 
   <!-- tab icon -->
   <link rel="shortcut icon" href="img/tab-icon.png">
-
-  <style>    
-    nav ul li a{
-    color: white;
-  }  
-
-  i.icon-color{
-    color:#8e82b0;
-  }
-
-  #bkgd {
-    background-color: #26a69a;
-  }
-
-  #left_border{
-    border-left: 2px solid #546e7a;
-  }
-
-  #right_border{
-    border-right: 2px solid #546e7a;
-  }
-  </style>
-
 </head>
-<nav class="white" role="navigation">
+<body>
+  <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo"><img class="responsive-img" src="img/logo.jpg" height="60px" width="60px"></a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-        <div class="row">
-        <form class="col s12">
-            <div class="row">
-              <div class="input-field col s12">
-                  <input id="search" type="input" class="validate">
-                    <label for="search" data-error="wrong" data-success="right">Search here</label>
-              </div>
-            </div>
+      <a id="logo-container" href="index.html" class="brand-logo"><img class="responsive-img hide-on-small-only" src="img/logo.jpg" height="55px" width="60px"></a>
+      <div class="right">
+        <form action="search.html">
+          <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
         </form>
       </div>
-        </li>
-        <li><a><i class="material-icons icon-color">search</i></a></li>
-      </ul>
-
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Programme</a></li>
-        <li><a href="#">Job Bank</a></li>
-        <li><a href="#">Documents</a></li>
-        <li><a href="#">Register Here</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="job_bank.html">Job Bank</a></li>
+        <li><a href="register.html">Documents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>e
         <li><a href="#">More</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -72,11 +47,12 @@
   <nav class="hide-on-small-only hide-on-med-only #8bc34a light-green" role="navigation">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Programme</a></li>
-        <li><a href="#">Documents</a></li>
-        <li><a href="#">Register Here</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="job_bank.html">Job Bank</a></li>
+        <li><a href="register.html">Documents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="active"><a href="contact.html">Contact Us</a></li>
         <li><a href="#">More</a></li>
       </ul>
     </div>
@@ -105,7 +81,7 @@
     </div>
 
     <div class="row">
-      <div class="col s1">
+      <div class="col s1 hide-on-small-only">
         <b>Address: </b>
       </div>
         <div class="col s4">
@@ -130,7 +106,7 @@
         </div>
 
     <div class="row">
-      <div class="col s1">
+      <div class="col s1 hide-on-small-only">
         <b>Phone: </b>
       </div>
         <div class="col s4">
@@ -152,13 +128,13 @@
     </div>
 
     <div class="row">
-      <div class="col s1">
+      <div class="col s1 hide-on-small-only">
         <b>Email: </b>
       </div>
-        <div class="col s4">
+        <div class="col s12 m4">
           <a href="mailto:itravelservices@yahoo.com" target="_top">itravelservices@yahoo.com</a>
         </div>
-          <div class="col s7">
+          <div class="col s12 m8">
              
              <form class="col s12">
                   <div class="row">
